@@ -9,16 +9,16 @@
   - [1. Project Description](#1-project-description)
   - [2. Resources](#2-resources)
   - [3. Division of Work](#3-division-of-work)
-    - [3.1 Afzal Chishti](#31-afzal-chishti)
-    - [3.2 Razi Syed](#32-razi-syed)
-    - [3.3 Sujan Kandeepan](#33-sujan-kandeepan)
+    - [3.1. Afzal Chishti](#31-afzal-chishti)
+    - [3.2. Razi Syed](#32-razi-syed)
+    - [3.3. Sujan Kandeepan](#33-sujan-kandeepan)
   - [4. Weekly Schedule](#4-weekly-schedule)
-    - [4.1 Week 1](#41-week-1)
-    - [4.2 Week 2](#42-week-2)
-    - [4.3 Week 3](#43-week-3)
-    - [4.4 Week 4](#44-week-4)
-    - [4.5 Week 5](#45-week-5)
-    - [4.6 Week 6](#46-week-6)
+    - [4.1. Week 1](#41-week-1)
+    - [4.2. Week 2](#42-week-2)
+    - [4.3. Week 3](#43-week-3)
+    - [4.4. Week 4](#44-week-4)
+    - [4.5. Week 5](#45-week-5)
+    - [4.6. Week 6](#46-week-6)
 
 ## 1. Project Description
 
@@ -32,15 +32,15 @@
 
 Based on the project description and researched materials given above, expected division of work per group member will be as outlined in the subsections below.
 
-### 3.1 Afzal Chishti
+### 3.1. Afzal Chishti
 
 ...
 
-### 3.2 Razi Syed
+### 3.2. Razi Syed
 
 ...
 
-### 3.3 Sujan Kandeepan
+### 3.3. Sujan Kandeepan
 
 ...
 
@@ -48,7 +48,7 @@ Based on the project description and researched materials given above, expected 
 
 The tentative weekly schedule for this project is broken down in the following subsections and will remain flexible to changes over the remainder of the term.
 
-### 4.1 Week 1
+### 4.1. Week 1
 
 > Dates: Sunday, March 7 - Saturday, March 13
 
@@ -60,7 +60,7 @@ Expected progress/completion:
 
 ...
 
-### 4.2 Week 2
+### 4.2. Week 2
 
 > Dates: Sunday, March 14 - Saturday, March 20
 
@@ -72,7 +72,7 @@ Expected progress/completion:
 
 ...
 
-### 4.3 Week 3
+### 4.3. Week 3
 
 > Dates: Sunday, March 21 - Saturday, March 27
 
@@ -84,7 +84,7 @@ Expected progress/completion:
 
 ...
 
-### 4.4 Week 4
+### 4.4. Week 4
 
 > Dates: Sunday, March 28 - Saturday, April 3
 
@@ -96,7 +96,7 @@ Expected progress/completion:
 
 ...
 
-### 4.5 Week 5
+### 4.5. Week 5
 
 > Dates: Sunday, April 4 - Saturday, April 10
 
@@ -108,7 +108,7 @@ Expected progress/completion:
 
 ...
 
-### 4.6 Week 6
+### 4.6. Week 6
 
 > Dates: Sunday, April 11 - Saturday, April 17
 
