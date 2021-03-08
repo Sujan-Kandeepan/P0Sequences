@@ -69,6 +69,7 @@ Expected progress/completion:
 
 Priorities and action items:
 
+- Set up codebase and organize into modular project structure
 - ...
 
 Expected progress/completion:
@@ -105,11 +106,13 @@ Expected progress/completion:
 
 Priorities and action items:
 
-- ...
+- Final testing and bug fixes with all functionality implemented
+- Complete user instructions and documentation for all modules
+- Work on presentation slides and poster to near completion
 
 Expected progress/completion:
 
-- ...
+- Near-final version of project/presentation materials completed
 
 ### 4.6. Week 6
 
