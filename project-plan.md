@@ -54,11 +54,14 @@ The tentative weekly schedule for this project is broken down in the following s
 
 Priorities and action items:
 
-...
+- Complete project plan (this document) as outlined on Avenue
+- Preliminary research into project topic, gathering resources
+- Expand on general topic to develop complete problem statement
+- Distribute work based on research findings and project requirements
 
 Expected progress/completion:
 
-...
+- Project plan submitted for review/grading by Wednesday, March 10
 
 ### 4.2. Week 2
 
@@ -66,11 +69,11 @@ Expected progress/completion:
 
 Priorities and action items:
 
-...
+- ...
 
 Expected progress/completion:
 
-...
+- ...
 
 ### 4.3. Week 3
 
@@ -78,11 +81,11 @@ Expected progress/completion:
 
 Priorities and action items:
 
-...
+- ...
 
 Expected progress/completion:
 
-...
+- ...
 
 ### 4.4. Week 4
 
@@ -90,11 +93,11 @@ Expected progress/completion:
 
 Priorities and action items:
 
-...
+- ...
 
 Expected progress/completion:
 
-...
+- ...
 
 ### 4.5. Week 5
 
@@ -102,11 +105,11 @@ Expected progress/completion:
 
 Priorities and action items:
 
-...
+- ...
 
 Expected progress/completion:
 
-...
+- ...
 
 ### 4.6. Week 6
 
@@ -114,8 +117,10 @@ Expected progress/completion:
 
 Priorities and action items:
 
-...
+- Finalize project submission, ensure project is accessible by TAs
+- Prepare and rehearse presentation with required materials
 
 Expected progress/completion:
 
-...
+- Complete project submitted and published by Monday, April 12
+- Presentation delivered during tentative dates, materials submitted
