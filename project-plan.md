@@ -7,6 +7,10 @@
 - [Project Plan &ndash; Adding Sequences to P0 (Group 10)](#project-plan--adding-sequences-to-p0-group-10)
   - [0. Table of Contents](#0-table-of-contents)
   - [1. Project Description](#1-project-description)
+    - [1.1. General Project Overview](#11-general-project-overview)
+    - [1.2. Proposed Language Features](#12-proposed-language-features)
+    - [1.3. Memory Allocation Techniques](#13-memory-allocation-techniques)
+    - [1.4. Implementation, Testing and Documentation](#14-implementation-testing-and-documentation)
   - [2. Resources](#2-resources)
   - [3. Division of Work](#3-division-of-work)
     - [3.1. Afzal Chishti](#31-afzal-chishti)
@@ -22,7 +26,47 @@
 
 ## 1. Project Description
 
-...
+### 1.1. General Project Overview
+
+The purpose of this project is to augment the P0 language to support sequences with a reasonable selection of sequence operations, as seen in other common programming languages, made available to the programmer.
+Because sequences have unbounded size, they cannot be allocated on the stack and must instead be dynamically allocated in memory, which presents its own unique set of challenges.
+Proposed additions to the P0 language, and approaches for handling memory allocation for this purpose, are explained below.
+
+### 1.2. Proposed Language Features
+
+Language features added to P0 will include but not be limited to the following:
+
+- Sequence literals: `[]`, `[1, 2, 3]`
+- Ranges as sequences: `[5 .. 10]`
+- Sequence indexing: `x[3]`, `z[y + 2]`
+- Selecting subsequences: `x[2:7]`, `y[3 : n + 1]`
+- Sequence concatenation: `[1, 2] ++ [3, 4]`
+
+More potential features, time permitting, may include the following:
+
+- Prepend and append to sequences: `3 <| [4, 5, 6] |> 7`
+- List (sequence) comprehension: `[x mod 3 for x in 1 .. 12]`
+- Sequence iteration: `for i in [1 .. 10] do write(i)`
+
+The above syntax takes inspiration from Python, Haskell and the notation used in CS/SE 2DM3 but remains flexible to changes during the process of development.
+
+### 1.3. Memory Allocation Techniques
+
+Two distinct approaches for handling memory allocation have been considered:
+
+- Re-allocating contiguous memory buffers with new size calculated by a scale factor as the length of the sequence changes, similar to Java
+  - Pros: constant-time array access, memory address arithmetic
+  - Cons: costly re-allocation on resize, unused memory addresses
+- Linked list internal representation with sparse memory allocation
+  - Pros: constant-time resize operation, space-efficient
+  - Cons: linear-time array access, no memory address arithmetic
+
+The tentative decision is to use the first approach, considering that the cost of re-allocating memory is a fair trade-off to enable fast memory access for indexing.
+
+### 1.4. Implementation, Testing and Documentation
+
+Implementation and testing will be done using Jupyter notebooks by extending the current P0 syntax and compiler while writing tests in a similar manner to those seen in the course materials.
+Documentation will be written using markdown format and published to the same repository as the source code.
 
 ## 2. Resources
 
