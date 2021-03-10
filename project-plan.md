@@ -70,11 +70,13 @@ Expected progress/completion:
 Priorities and action items:
 
 - Set up codebase and organize into modular project structure
-- ...
+- Augment P0 scanner/parser to support new syntax/operations
+- Research and implement memory allocation in WebAssembly
 
 Expected progress/completion:
 
-- ...
+- High-level support for sequence language features added in P0
+- Abstraction layer present for memory allocation in WebAssembly
 
 ### 4.3. Week 3
 
@@ -82,11 +84,13 @@ Expected progress/completion:
 
 Priorities and action items:
 
-- ...
+- Develop high-level translation scheme from P0 to WebAssembly
+- Implement sequences with supported operations in WebAssembly
 
 Expected progress/completion:
 
-- ...
+- P0 syntax and WebAssembly implementation finished independently
+- Compiler design for newly supported language features completed
 
 ### 4.4. Week 4
 
@@ -94,11 +98,13 @@ Expected progress/completion:
 
 Priorities and action items:
 
-- ...
+- Implement compilation rules per translation scheme (integration)
+- Create unit tests and integration tests using small P0 programs
 
 Expected progress/completion:
 
-- ...
+- Mostly working compilation to accompany changes to P0 language
+- Alpha stage in development pending extensive QA and optimizations
 
 ### 4.5. Week 5
 
