@@ -70,7 +70,8 @@ Expected progress/completion:
 Priorities and action items:
 
 - Set up codebase and organize into modular project structure
-- Augment P0 scanner/parser to support new syntax/operations
+- Augment grammar and P0 scanner/parser to support new syntax
+- Modify P0 evaluator to support new operations/expression types
 - Research and implement memory allocation in WebAssembly
 
 Expected progress/completion:
