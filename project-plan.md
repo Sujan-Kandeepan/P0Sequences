@@ -75,7 +75,9 @@ Documentation will be written using markdown format and published to the same re
 
 ### 2.1. Memory Management Techniques
 
-...
+1. Operating system - memory management. (n.d.). Retrieved March 8, 2021, from <https://www.tutorialspoint.com/operating_system/os_memory_management.htm>
+2. Guru, K. (n.d.). Memory management in Os: Contiguous, swapping, fragmentation. Retrieved March 8, 2021, from <https://www.guru99.com/os-memory-management.html>
+3. Alabdulaly, W. (2016, April). Memory Management techniques and Processes Scheduling. Retrieved March 8, 2021, from <https://www.ijser.org/researchpaper/Memory-Management-techniques-and-Processes-Scheduling.pdf>
 
 ### 2.2. Python Lists and Memory
 
