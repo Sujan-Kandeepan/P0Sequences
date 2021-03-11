@@ -95,7 +95,9 @@ Based on the project description and researched materials given above, expected 
 
 ### 3.1. Afzal Chishti
 
-...
+- Research and selection of memory management techniques
+- Aid in implementation of memory management in WebAssembly
+- Contribute toward documentation and presentation materials
 
 ### 3.2. Razi Syed
 
