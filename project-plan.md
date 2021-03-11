@@ -79,11 +79,13 @@ Documentation will be written using markdown format and published to the same re
 
 ### 2.2. Python Lists and Memory
 
-...
+4. Design and History FAQ. (n.d.). Retrieved March 10, 2021, from <https://docs.python.org/3/faq/design.html#how-are-lists-implemented-in-cpython>
+5. Shaw, A. (2021, February 20). Your Guide to the CPython Source Code. Retrieved March 10, 2021, from <https://realpython.com/cpython-source-code-guide/#memory-management-in-cpython>
 
 ### 2.3. WebAssembly References
 
-...
+6. Rossberg, A. (n.d.). WebAssembly Specification. Retrieved March 10, 2021, from <https://webassembly.github.io/spec/core/>
+7. WebAssembly. (n.d.). Retrieved March 10, 2021, from <https://developer.mozilla.org/en-US/docs/WebAssembly>
 
 ## 3. Division of Work
 
