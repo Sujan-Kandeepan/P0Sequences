@@ -86,7 +86,9 @@ Based on the project description and researched materials given above, expected 
 
 ### 3.3. Sujan Kandeepan
 
-...
+- Augment P0 scanner, parser and evaluator to support sequences
+- Design and implement compilation from P0 to WebAssembly
+- Contribute toward documentation and presentation materials
 
 ## 4. Weekly Schedule
 
