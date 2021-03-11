@@ -12,6 +12,9 @@
     - [1.3. Memory Allocation Techniques](#13-memory-allocation-techniques)
     - [1.4. Implementation, Testing and Documentation](#14-implementation-testing-and-documentation)
   - [2. Resources](#2-resources)
+    - [2.1. Memory Management Techniques](#21-memory-management-techniques)
+    - [2.2. Python Lists and Memory](#22-python-lists-and-memory)
+    - [2.3. WebAssembly References](#23-webassembly-references)
   - [3. Division of Work](#3-division-of-work)
     - [3.1. Afzal Chishti](#31-afzal-chishti)
     - [3.2. Razi Syed](#32-razi-syed)
@@ -69,6 +72,16 @@ Implementation and testing will be done using Jupyter notebooks by extending the
 Documentation will be written using markdown format and published to the same repository as the source code.
 
 ## 2. Resources
+
+### 2.1. Memory Management Techniques
+
+...
+
+### 2.2. Python Lists and Memory
+
+...
+
+### 2.3. WebAssembly References
 
 ...
 
