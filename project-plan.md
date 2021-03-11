@@ -97,7 +97,10 @@ Based on the project description and researched materials given above, expected 
 
 ### 3.2. Razi Syed
 
-...
+- Research Python memory management techniques for lists
+- Aid in implementation of sequence operations in WebAssembly
+- Write tests and P0 programs to test implementation of sequences
+- Contribute toward documentation and presentation materials
 
 ### 3.3. Sujan Kandeepan
 
