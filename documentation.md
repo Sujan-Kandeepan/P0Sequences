@@ -139,7 +139,7 @@ class SubArray:
 - How to allocate memory when doing concatenation of array or subarrays.  
 **End result:** After much delibaration and research in terms of how to allocate memory in a manner in such a way that memory leak could be reduced to a minimum in which we discussed ideas of declaring size of new array prior to concatenation. In addition, as part of this we discussed how allocating memory to an array out of bounds would work. As part of looking into how to allocate and deallocate memory, Emscripten and clang compilers were used to compile C/C++ to WebAssembly. After discussion with TA it was clarified that the memory leak would not be in the scope of this project and would be handled by a garbage collector.
 
-- Bugs in the existing code
+- Bugs in the existing code.  
 **End Result:** As Sujan and Razi were making very comprehensive test cases for our features, they came across some unusual output for certain tests such as the below.
 
 ```python
