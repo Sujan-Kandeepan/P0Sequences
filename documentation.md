@@ -124,7 +124,7 @@ In **TestIndexing.ipynb**, there are 13 testcases that are for meant to fail and
 
 ## 3. Design Challenges
 
-1. Deciding how we would implement sequences in terms of whether to create a new data type or just add to the array data type.  
+- Deciding how we would implement sequences in terms of whether to create a new data type or just add to the array data type.  
 **End result:** After seeing in lab 11, that arrays already provided much of the groundwork necessary in terms of the fact that the value at an index can be updated one at a time. We decided that we could re-use arrays in many scenarios as we do in the `SubArray` in the **ST.ipynb** class as shown below.  
 
 ```python
@@ -136,8 +136,57 @@ class SubArray:
                str(self.lower) + ', upper = ' + str(self.upper) + ')'
 ```
 
-2. How to allocate memory when doing concatenation of array or subarrays.  
+- How to allocate memory when doing concatenation of array or subarrays.  
 **End result:** After much delibaration and research in terms of how to allocate memory in a manner in such a way that memory leak could be reduced to a minimum in which we discussed ideas of declaring size of new array prior to concatenation. In addition, as part of this we discussed how allocating memory to an array out of bounds would work. As part of looking into how to allocate and deallocate memory, Emscripten and clang compilers were used to compile C/C++ to WebAssembly. After discussion with TA it was clarified that the memory leak would not be in the scope of this project and would be handled by a garbage collector.
+
+- Bugs in the existing code
+**End Result:** As Sujan and Razi were making very comprehensive test cases for our features, they came across some unusual output for certain tests such as the below.
+
+```python
+program p
+    var a: [1..5] → integer
+    var b: [1..3] → integer
+    a := [103..107]
+    b := a[2:5]
+    write(b[1])
+    write(b[2])
+    write(b[3])
+```
+
+which had an output of
+
+```python
+104
+105
+104
+```
+
+The duo spent countless hours attempting to discern and identify why there the final output was 104 instead of 106. Other similar test cases such as the below
+
+```python
+program p
+    var a: [1..5] → integer
+    var b: [1..5] → integer
+    a := [103..107]
+    b := a[1:6]
+    write(b[1])
+    write(b[2])
+    write(b[3])
+    write(b[4])
+    write(b[5])
+```
+
+did give the expected output
+
+```python
+103
+104
+105
+106
+107
+```
+
+Once the group messaged a TA, a TA was able to review our code and not able to discern any clear reason behind the faults. He said the faults seemed to be with the code outside of our implementation and told us not to worry about it. The group was able to determine where if you select from the start of the array, the output is as expected. The further along you go, the more messed up it gets to the point where selecting values at end of array gives all identical elements even though the original array had all distinct elements.
 
 ## 4. Conclusion
 
