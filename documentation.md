@@ -108,7 +108,7 @@ It is important to have testcases that are used to validate the above features a
 
 In **TestConcat.ipynb**, there are __ testcases that are for meant to pass and check valid syntax.
 
-In **TestLiterals.ipynb**, there are 8 testcases that are for meant to pass and check valid syntax.
+In **TestLiterals.ipynb**, there are 9 testcases that are for meant to pass and check valid syntax.
 
 In **TestIndexing.ipynb**, there are 11 testcases that are for meant to pass and check valid syntax.
 
@@ -186,7 +186,7 @@ did give the expected output
 107
 ```
 
-Once the group messaged a TA, a TA was able to review our code and not able to discern any clear reason behind the faults. He said the faults seemed to be with the code outside of our implementation and told us not to worry about it. The group was able to determine where if you select from the start of the array, the output is as expected. The further along you go, the more messed up it gets to the point where selecting values at end of array gives all identical elements even though the original array had all distinct elements.
+Once the group messaged a TA, a TA was able to review our code and not able to discern any clear reason behind the faults. He said the faults seemed to be with the code outside of our implementation and told us not to worry about it. The group was able to determine that if you select from the start of the array, the output is as expected. The further along you go, the more erroneous it gets to the point where selecting values at end of array gives all identical elements even though the original array had all distinct elements.
 
 ## 4. Conclusion
 
