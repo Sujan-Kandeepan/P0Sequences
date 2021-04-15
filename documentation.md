@@ -10,9 +10,9 @@
     - [1.1. General Project Overview](#11-general-project-overview)
     - [1.2. Language Features](#12-language-features)
     - [1.3 Implementation](#13-implementation)
-      - [1.3.1. ST](#131-st)
+      - [1.3.1. ST.ipynb](#131-stipynb)
     - [1.4. Grammar Changes](#14-grammar-changes)
-      - [1.4.1. P0](#141-p0)
+      - [1.4.1. P0.ipynb](#141-p0ipynb)
   - [2. Testing](#2-testing)
     - [2.1 Passing testcases](#21-passing-testcases)
     - [2.2 Error checking testcases](#22-error-checking-testcases)
@@ -42,10 +42,10 @@ The above syntax takes inspiration from Python and the notation used in CS/SE 2D
 
 ### 1.3 Implementation
 
-We decided to augment the existing array type instead of defining a new data type for sequence. To do so, there was an extension to the language syntax to support new language features. The parser was modified to accept new syntax and update the grammar. Alongside updating the grammar for support of the new features, it was key to also include comprehensive error handling for handling the new syntax rules. Array literals and subarrays were new types in the `ST.ipynb` that referenced the original array. In addition to perserve memory and have good performance, duplicating array contents into new memory locations is reduced. The new types/constructors resulted in better code readability. To provide operations such as concatenation and subarray, the existing operators were overloaded.
+We decided to augment the existing array type instead of defining a new data type for sequence. To do so, there was an extension to the language syntax to support new language features. The parser was modified to accept new syntax and update the grammar. Alongside updating the grammar for support of the new features, it was key to also include comprehensive error handling for handling the new syntax rules. Array literals and subarrays were new types in the [ST.ipynb](ST.ipynb) that referenced the original array. In addition to perserve memory and have good performance, duplicating array contents into new memory locations is reduced. The new types/constructors resulted in better code readability. To provide operations such as concatenation and subarray, the existing operators were overloaded.
 Eg. ‘:=’ for populating entire arrays, ‘+’ for concatenation.
 
-The memory allocation aspect which is paramount especially for the concatenation functionality is done by the *genCopyArray* in `CGwat.ipynb` and is shown below.
+The memory allocation aspect which is paramount especially for the concatenation functionality is done by the *genCopyArray* in [CGwat.ipynb](CGwat.ipynb) and is shown below.
 
 ```python
 def genCopyArray(x):
@@ -70,7 +70,7 @@ def genStandaloneOp(op):
 
 As a result of the above, to keep the remaining code consistent an optional *load* parameter was added to the *genUnaryOp*, *genBinaryOp* and *genRelation* and set to true to indicate that for all those instances to ensure code still runs as it did before.
 
-#### 1.3.1. ST
+#### 1.3.1. [ST.ipynb](ST.ipynb)
 
 Two new types of symbol table entries were created which are **ArrayLiteral** and **SubArray**.
 The ArrayLiteral is the class for when creating a new literal whether by passing every value (eg. `a = [2,6,-5]`) or by using ranges (eg. `a = [5 .. 8]`) to pass the values.
@@ -80,7 +80,7 @@ Both of the above types augment the array type and are references to the array t
 
 ### 1.4. Grammar Changes
 
-#### 1.4.1. P0
+#### 1.4.1. [P0.ipynb](P0.ipynb)
 
 So, the procedure *selector()* is modified so that it can support subarrays by having the `[: expression]` added in the grammar rule below.
 
@@ -100,32 +100,32 @@ The `[expression (".." expression)]` is to add the functionality of passing a ra
 
 ## 2. Testing
 
-The testing of new functionality is done in the **TestConcat.ipynb**, **TestLiterals.ipynb** and **TestIndexing.ipynb**
+The testing of new functionality is done in the [TestConcat.ipynb](TestConcat.ipynb), [TestIndexing.ipynb](TestIndexing.ipynb) and [TestLiterals.ipynb](TestLiterals.ipynb).
 
 ### 2.1 Passing testcases
 
 It is important to have testcases that are used to validate the above features and examples that we showed in section 1.2. There are numerous tests in each of the test files which are used for validating the features.
 
-In **TestConcat.ipynb**, there are __ testcases that are for meant to pass and check valid syntax.
+In [TestConcat.ipynb](TestConcat.ipynb), there are __ testcases that are for meant to pass and check valid syntax.
 
-In **TestLiterals.ipynb**, there are 9 testcases that are for meant to pass and check valid syntax.
+In [TestIndexing.ipynb](TestIndexing.ipynb), there are 11 testcases that are for meant to pass and check valid syntax.
 
-In **TestIndexing.ipynb**, there are 11 testcases that are for meant to pass and check valid syntax.
+In [TestLiterals.ipynb](TestLiterals.ipynb), there are 9 testcases that are for meant to pass and check valid syntax.
 
 ### 2.2 Error checking testcases
 
 In addition to having checked that the features have been added properly,it is important to see in what scenario the new grammar rules fail and also what error message is returned so that a user can easily discern what the issue is.
 
-In **TestConcat.ipynb**, there are __ testcases that are for meant to fail and result in an error message.
+In [TestConcat.ipynb](TestConcat.ipynb), there are __ testcases that are for meant to fail and result in an error message.
 
-In **TestLiterals.ipynb**, there are 4 testcases that are for meant to fail and result in an error message.
+In [TestIndexing.ipynb](TestIndexing.ipynb), there are 13 testcases that are for meant to fail and result in an error message.
 
-In **TestIndexing.ipynb**, there are 13 testcases that are for meant to fail and result in an error message.
+In [TestLiterals.ipynb](TestLiterals.ipynb), there are 4 testcases that are for meant to fail and result in an error message.
 
 ## 3. Design Challenges
 
 - Deciding how we would implement sequences in terms of whether to create a new data type or just add to the array data type.  
-**End result:** After seeing in lab 11, that arrays already provided much of the groundwork necessary in terms of the fact that the value at an index can be updated one at a time. We decided that we could re-use arrays in many scenarios as we do in the `SubArray` in the **ST.ipynb** class as shown below.  
+**End result:** After seeing in lab 11, that arrays already provided much of the groundwork necessary in terms of the fact that the value at an index can be updated one at a time. We decided that we could re-use arrays in many scenarios as we do in the `SubArray` in the [ST.ipynb](ST.ipynb) class as shown below.
 
 ```python
 class SubArray:
