@@ -106,7 +106,7 @@ The testing of new functionality is done in the **TestConcat.ipynb**, **TestLite
 
 It is important to have testcases that are used to validate the above features and examples that we showed in section 1.2. There are numerous tests in each of the test files which are used for validating the features.
 
-In **TestConcat.ipynb**, there are __ testcases that are for meant to pass and check valid syntax.
+In **TestConcat.ipynb**, there are 3 testcases that are for meant to pass and check valid syntax.
 
 In **TestLiterals.ipynb**, there are 9 testcases that are for meant to pass and check valid syntax.
 
